@@ -1,0 +1,47 @@
+.box{
+    width: 400px;
+    height: 400px;
+    background-color: tomato;
+    margin: 40% auto;
+    position: relative;
+    /* animation-name: square;
+     animation-duration: 3s;
+    animation-delay: 2s;
+    animation-iteration-count: ;
+    animation-direction: alternate;
+    animation-play-state: running; */
+    
+
+    animation: square 4s linear infinite alternate backwards running;
+}
+@keyframes square{
+    0%{
+        background-color: tomato;
+        left: 0;
+        right: 0;
+    }
+    25% {
+        background-color: magenta;
+        left: 25%;
+        right: 25%;
+        border-radius: 25%;
+    }
+     50% {
+        background-color: blue;
+        left: 50%;
+        right: 50%;
+        border-radius: 50%;
+    }
+     75% {
+        background-color: magenta;
+        left: 75%;
+        right: 75%;
+        border-radius: 75%;
+    }
+     100% {
+        background-color: yellow;
+        left: 20%;
+        right: 100%;
+        border-radius: 100%;
+    }
+}
