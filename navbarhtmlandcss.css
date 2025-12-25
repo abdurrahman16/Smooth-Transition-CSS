@@ -1,0 +1,113 @@
+#CSS
+body{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    background-color: antiquewhite;
+}
+header{
+    width: 100%;
+    background-color: black;
+    color: white;
+    display: flex;
+
+
+}
+ .logo{
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 30px;
+    font-weight: bold;
+    margin-left: 20px;
+    padding: 10px;
+    margin-top: 10px;
+
+
+ }
+ .navbar{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+ }
+ .navbar ul{
+    list-style: none;
+    
+ }
+ .navbar ul li{
+        background-color: tomato;
+        width: 170px;
+        border: 1px solid white;
+        height: 50px;
+        line-height: 50px;
+        text-align: center;
+        float: left;
+        color: white;
+        font-weight: bold;
+        text-transform: uppercase;
+
+    }
+    .navbar ul li a{
+        text-decoration: none;
+        color: white;
+        text-align: center;
+    }
+    .navbar ul li:hover{
+    background-color: aqua;
+    transition: all ease-in 0.5s;
+    }
+    .navbar ul ul{
+        display: none;
+    }
+ .navbar ul li:hover > ul {
+        display: block;
+    }
+
+
+
+----
+
+#html
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <link rel="stylesheet" href="js/style.css">
+   <script src="https://kit.fontawesome.com/4cc05aa060.js" crossorigin="anonymous"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <title>HTML CSS</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Pinyon+Script&display=swap" rel="stylesheet">
+</head>
+<body>
+    
+<header >
+    <div class="logo">
+        Babban Site
+    </div>
+    <div class="navbar">
+    <ul>
+    <li><a href="#">Home</a></li>
+    <li><a href="#">Blog</a></li>
+
+    <li>
+        <a href="#">Services</a>
+        <ul>
+            <li><a href="#">Graphics</a></li>
+            <li><a href="#">Web Design</a></li>
+            <li><a href="#">Web Development</a></li>
+        </ul>
+    </li>
+
+    <li><a href="#">About us</a></li>
+</ul>
+    </div>
+</header>
+    
+</div>
+</body>
+</html>
+
+
